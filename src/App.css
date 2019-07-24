@@ -3,6 +3,7 @@
 }
  img{
     width: 100%;
+    padding-top: 120px; 
 }
 Menu{
     width:100%;
@@ -10,18 +11,111 @@ Menu{
 #right{
  width:100%;
 }
+Header.dropdown{
+    display:inline-block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
+    background-color: grey
+}
+br.search{
+    display:none
+}
+Header.heading{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+span.icon1
+   {
+    font-size: 13px
+     
+    }
+   span.up:hover{
+       display:none;
+       cursor: pointer;
+   }
+   
+    span.text1
+    {
+        font-size: 13px
+    }
+  
+    
+
+ span.sear {
+    position: absolute;
+    width: 300px;
+    
+} 
 @media screen and (max-width:959px){
    #container{
        width: 100%
    }
+   
     img{
        width: 100%;
-       padding-top: 20px;
+       padding-top: 128px;
    }
    Menu{
        width:100%;
    }
+   Header.heading{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+ 
+   overflow: hidden;
+   }
+   
    #right{
     width:100%;
+   }
+   #break{
+    display: none;
+    white-space: nowrap;
+   }
+   span.icon 
+   {
+       display:inline-block
+    }
+    span.text
+    {
+        display:none
+    }
+    br.search{
+      
+        display:inline-block;
+       
+    }
+    Header.dropdown{
+        display:none;
+    }
+ span.sear{
+     position: fixed;
+     left: 0;
+     width:100%;
+     background-color: black;
+     padding-right:50px;
+     padding-left:20px;
+ }
+  
+  
 }
-}
+/* @media only screen and (min-width: 500px) {
+    span.sear {
+       
+        position: absolute;
+        top: 500px;
+        left:500px;
+        bottom:500px;
+        right:500px;
+        width: 500px;
+      
+    }
+} */
